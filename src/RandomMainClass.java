@@ -39,7 +39,10 @@ null and add to that index. I'm not sure of how to avoid that problem otherwise.
 	
 	public static void main(String[] args) 
 	{
-	RandomizedCollection<Integer> RC1=randomC(5,"Integer");	
+		Integer intg = new Integer(6);
+		String str = "this string";
+		
+	RandomizedCollection<Integer> RC1=randomC(5,intg);	
 	RC1.seeContents();
 	
 	RC1.add(12); 
@@ -60,7 +63,7 @@ RC1.seeContents();
 System.out.println(RC1.getRandom(1,3));
 	 
 	
-	RandomizedCollection<String> RC2 = randomC(5,"String");
+	RandomizedCollection<String> RC2 = randomC(5,str);
 	 RC2.seeContents();
 	
 	 RC2.add("one"); 
