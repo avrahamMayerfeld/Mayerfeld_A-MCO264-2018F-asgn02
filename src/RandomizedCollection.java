@@ -4,27 +4,28 @@ public  class  RandomizedCollection<E>   {
 	
 	ArrayList<E> AL;
 	
-public RandomizedCollection(int size)
+	public RandomizedCollection(int size)
 	{
-	 AL=new ArrayList<>(size);
+	 	AL=new ArrayList<>(size);
 		
 	}
    
 
-   public void initialFill(E o)
-   {AL.add(o);}
+	public void initialFill(E o)
+	{AL.add(o);}
 
 	public void add(E o) 
 	{
-     for(int i=0; i< AL.size();i++)
-     {
+     		for(int i=0; i< AL.size();i++)
+     		{
 		
-    	 if(AL.get(i).equals(0)||AL.get(i).equals("EMPTY")||AL.get(i).equals(null))
-    	 {AL.set(i,o);
-    	 break;
-    	 }
-     }
-     }
+    			if(AL.get(i).equals(0)||AL.get(i).equals("EMPTY")||AL.get(i).equals(null))
+    	 		{
+				AL.set(i,o);
+    				break;
+    	 		}
+     		}
+     	}
 	
 	
 	public void remove(int index)
@@ -49,7 +50,7 @@ public RandomizedCollection(int size)
 		E randomItem;
 		randomItem = AL.get(rNum);
 		return randomItem;
-		}
+	}
 	public E getRandom(int start, int end) {
 		if(end> AL.size()|| start> AL.size())
 			try {
@@ -65,10 +66,10 @@ public RandomizedCollection(int size)
 		E randomItem;
 		randomItem = AL.get(rNum);
 		return randomItem;
-		}
+	}
 
 	
 	
-	}
+}
 
 
