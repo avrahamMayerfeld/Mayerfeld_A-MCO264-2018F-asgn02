@@ -7,7 +7,6 @@ public  class  RandomizedCollection<E>   {
 	public RandomizedCollection(int size)
 	{
 	 	AL=new ArrayList<>(size);
-		
 	}
    
 
@@ -41,7 +40,7 @@ public  class  RandomizedCollection<E>   {
 	{
 		for (int i=0; i< AL.size();i++)
 		{
-		System.out.println(AL.get(i).toString());
+			System.out.println(AL.get(i).toString());
 		}
 	}
 	public E getRandom() {
